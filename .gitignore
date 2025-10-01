@@ -1,0 +1,14 @@
+# VS Code
+.vscode/
+
+# Environnements virtuels
+**/.venv/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Fichiers de cache Python
+**/__pycache__/
+**/*.py[cod]
