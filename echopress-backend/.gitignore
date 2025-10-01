@@ -22,6 +22,8 @@ static/
 .env
 .env.local
 .env.*.local
+.env.development
+.env.production
 
 # Système
 .DS_Store
@@ -35,3 +37,12 @@ desktop.ini
 # Migrations Django
 */migrations/*.py
 !*/migrations/__init__.py
+
+# IDE et éditeurs
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Logs et données
+logs/
+*.log.*
