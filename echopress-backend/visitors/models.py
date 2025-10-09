@@ -1,3 +1,4 @@
+#visitors/models.py
 from django.db import models
 from django.conf import settings
 
@@ -13,6 +14,7 @@ class Visitor(models.Model):
     session_key = models.CharField(max_length=40, blank=True, db_index=True)
     is_bot = models.BooleanField(default=False)
     extra = models.JSONField(null=True, blank=True)
+
     class Meta:
         indexes = [
             models.Index(fields=['article', 'visit_time']),        # recherches par article triées par date
